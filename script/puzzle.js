@@ -79,19 +79,19 @@ function setCardsImages() {
         let caseNo = imagesPosition[i - 1];
         switch (caseNo) {
             case 0:
-                document.getElementById('card-' + i).style.backgroundImage = 'url("../images/shiva.png")';
+                document.getElementById('card-' + i).style.backgroundImage = 'url("images/shiva.png")';
                 break;
             case 1:
-                document.getElementById('card-' + i).style.backgroundImage = 'url("../images/lingam.png")';
+                document.getElementById('card-' + i).style.backgroundImage = 'url("images/lingam.png")';
                 break;
             case 2:
-                document.getElementById('card-' + i).style.backgroundImage = 'url("../images/om.png")';
+                document.getElementById('card-' + i).style.backgroundImage = 'url("images/om.png")';
                 break;
             case 3:
-                document.getElementById('card-' + i).style.backgroundImage = 'url("../images/shankh.png")';
+                document.getElementById('card-' + i).style.backgroundImage = 'url("images/shankh.png")';
                 break;
             case 4:
-                document.getElementById('card-' + i).style.backgroundImage = 'url("../images/trishool.png")';
+                document.getElementById('card-' + i).style.backgroundImage = 'url("images/trishool.png")';
                 break;
         }
     }
