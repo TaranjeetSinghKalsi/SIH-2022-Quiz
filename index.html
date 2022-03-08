@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevaSthanam Quiz- Kedarnath</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script/rawgit-qrCode-qrPacked.js"></script>
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="popup">
+            <h2 class="popup-heading">Welcome to DevaSthanam</h2>
+            <p class="popup-para">You get couple of seconds to memorize the images with their positions. After that, you
+                have to match the same images in pair of 2. For Every correct match you get 100 points and for every
+                wrong match you lose 10 points. The goal is to get the highest points. Enjoy!!!</p>
+            <button type="button" onclick="hidePopup();" class="button popup-btn">Start Game</button>
+        </div>
+    </div>
+    <div id="popup-effected-blur-area">
+        <div id="header">
+            <h1>DevaSthanam</h1>
+            <div id="coin-container">
+                <img id="coin-img" src="images/coin.svg" alt="">
+                <h3 id="coins">1000</h3>
+            </div>
+        </div>
+        <h2 class="text-center" id="place-name">Kedarnath Quiz</h2>
+
+        <!-- Quiz Sections -->
+        <div id="quiz-sections">
+            <div id="historical-section" onclick="showHistorical()"> Historical </div>
+            <div id="geographical-section" onclick="showGeographical()">Geographical</div>
+            <div id="live-section" onclick="showLive()">Live</div>
+            <a href="puzzle.html">
+                <div id="puzzle-section"> Puzzle</div>
+            </a>
+        </div>
+
+        <!-- Historical and Geographical Section -->
+        <main id="main">
+
+            <div id="question-container">
+                <span id="q-no">Q10:</span>
+                <p id="question"> </p>
+            </div>
+
+            <!-- For QR Only -->
+            <div id="img-container">
+                <img id="q-img" src="" alt="">
+            </div>
+            <!-- For QR Only -->
+            <div id="qr-container">
+                <!-- <a id="btn-scan-qr"> -->
+                <!-- <img src="images/qr-img.svg"> -->
+                <!-- <button id="scan-qr" class="btn">Scan QR</button> -->
+                <!-- </a> -->
+
+                <canvas hidden="" id="qr-canvas"></canvas>
+
+                <div id="qr-result" hidden="">
+                    <span id="outputData"></span>
+                </div>
+            </div>
+
+            <div id="option-container">
+                <div class="background-reset">
+                    <input type="radio" id="option-a" name="selectedOption" value="">
+                    <label for="option-a">Option 1</label>
+                    <details>
+                        <summary>See Details</summary>
+                        <p class="details" id="detail-a">QQ</p>
+                    </details>
+                </div>
+                <div class="background-reset">
+                    <input type="radio" id="option-b" name="selectedOption" value="">
+                    <label for="option-b">Option 2</label>
+                    <details>
+                        <summary>See Details</summary>
+                        <p class="details" id="detail-b">QQ</p>
+                    </details>
+                </div>
+                <div class="background-reset">
+                    <input type="radio" id="option-c" name="selectedOption" value="">
+                    <label for="option-c">Option 3</label>
+                    <details>
+                        <summary>See Details</summary>
+                        <p class="details" id="detail-c">QQ</p>
+                    </details>
+                </div>
+                <div class="background-reset">
+                    <input type="radio" id="option-d" name="selectedOption" value="">
+                    <label for="option-d">Option 4</label>
+                    <details>
+                        <summary>See Details</summary>
+                        <p class="details" id="detail-d">QQ</p>
+                    </details>
+                </div>
+            </div>
+
+            <div id="btn-container">
+                <button id="prev-btn" class="btn">Prev</button>
+                <button id="check-btn" class="btn">Submit</button>
+                <button id="scan-qr" class="btn">Scan QR</button>
+                <button id="next-btn" class="btn">Next</button>
+            </div>
+            <div class="text-center">
+                <button id="submit-btn" class="btn">Finish Quiz</button>
+            </div>
+        </main>
+
+        <!-- Score Section -->
+        <section id="score-window">
+            <h2 class="text-left">
+                Correct Answers: <span id="correct-answers"> </span>
+            </h2>
+            <h2 class="text-left">
+                Incorrect Answers: <span id="incorrect-answers"> </span>
+            </h2>
+            <h2 class="text-left">
+                Coins Earned: <span id="coins-earned"> </span>
+            </h2>
+            <button id="finish-review" class="btn">Finish Review</button>
+        </section>
+    </div>
+</body>
+<script src="script/script.js"></script>
+<script defer src="script/qrCodeScanner.js"></script>
+
+</html>
