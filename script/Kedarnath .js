@@ -48,18 +48,18 @@ function showHistorical() {
   // !!! Very Important- question must be in tempalate ex- ':' is necessary just after Qno. . I used QQ and qqa,qqb,qqc,qqd to separate question and options.
 
   Qdata = [
-    "Q1: Who constructed Badrinath Temple? QQ qqa) Aadi Shankaracharya qqb) Ramana Maharishi qqc) Swami Vivekanand qqd) Vyasa",
-    "Q2: In which century it was constructed QQ qqa) 10th century qqb) 7th century qqc) 8th century qqd) 11th century",
-    "Q3: Which God is praised in the Badrinath Temple? QQ qqa) God Shiva qqb) God Vishnu qqc) God Brahma qqd) God Krishna",
-    "Q4: How was Badrinath Temple destroyed? QQ qqa) by Tsunami qqb) by floods qqc) by earthquake qqd) by war",
-    "Q5: Where did Shankaracharya discovered the deity of Badrinath? QQ qqa) in the Alaknanda river qqb) in the Forest qqc) in the Temple qqd) in the dream"
+    "Q1: Who constructed Kedarnath Temple? QQ qqa) Aadi Shankaracharaya qqb) Swami Vivekanand qqc) Naresh Sudarshan Shah qqd) General Amar Singh Thapa",
+    "Q2: In which century, it was constructed QQ qqa) 6th century qqb) 7th century qqc) 8th century qqd) 5th century",
+    "Q3: Which God is praised in Kedarnath temple? QQ qqa) God Vishnu qqb) God Brahma qqc) God Krishna qqd) God Shiva",
+    "Q4: How many years old is Kedarnath Temple? QQ qqa) 1500 qqb) 1200 qqc) 1400 qqd) 1700",
+    "Q5: What is unique about Kedarnath temple? QQ qqa) Lowest among the 12 Jyotirlingas qqb) Sacred place for Hindus qqc) Highest among the 12 Jyotirlingas qqd) Due to its architecture"
   ];
   Adata = [
-    "a) Aadi Shankaracharya QQ Badrinath temple was constructed by Aadi Shankaracharya.",
-    "b) 7th century QQ The temple was constructed by Aadi Shankaracharya in the early 7th century.",
-    "b) God Vishnu QQ In Badrinath Temple, God Vishnu is worshipped as Badrinarayan.",
-    "c) by earthquake QQ Temple was destroyed by Himalayan Earthquake in the year 1803.",
-    "a) in the Alaknanda river QQ Hindu Followers assert that he Shankaracharya discovered the deity of Badrinath in the Alaknanda river."
+    "a) Aadi Shankaracharaya QQ According to the myths, Pandavas built the temple of kedarnath and the present temple was established by Aadi Shankaracharya.",
+    "c) 8th century QQ Kedarnath temple was constructed in the 8th century A.D.",
+    "d) God Shiva QQ God Shiva is praised in Kedarnath Temple",
+    "b) 1200 QQ Kedarnath temple is 1200 years old.",
+    "c) Highest among the 12 Jyotirlingas QQ Kedarnath Temple is the highest among the 12 Jyotirlingas"
   ];
   iterateQuestion(0);
 }
@@ -79,18 +79,18 @@ function showGeographical() {
 
   // !!! Very Important- question must be in tempalate ex- ':' is necessary just after Qno. . I used QQ and qqa,qqb,qqc,qqd to separate question and options.
   Qdata = [
-    "Q1: Where is Badrinath Temple situated? QQ qqa) Himalaya parvat qqb) Om parvat qqc) Garhwal hills qqd) Shankaracharya parvat",
-    "Q2: What is its height? QQ qqa) 2300m qqb) 3100m qqc) 3400m qqd) 3700m",
-    "Q3: What is the Architecture of Badrinath Temple? QQ qqa) Modern Architecture qqb) Gothic Architecture qqc) Nagara Architecture qqd) North-Indian Architecture",
-    "Q4: What is the height of the idol present inside the temple? QQ qqa) 1m high qqb) 3m high qqc) 5m high qqd) 4m high",
-    "Q5: For which duration, temple is opened for worship? QQ qqa) for whole year qqb) for 3 months  qqc) for 6 months qqd) for 10 months"
+    "Q1: Where is Kedarnath Temple situated? QQ qqa) Himalayas qqb) Nilgiri Parvat qqc) Kailash Parvat qqd) Garhwal Himalayan Range",
+    "Q2: Which river flows through the Garwhal Himalayan range? QQ qqa) Mandakini river qqb) Narmada river qqc) Ganga river qqd) Tapti river",
+    "Q3: Kedarnath is how many meter above the sea level? QQ qqa) 3000m qqb) 3200m qqc) 3500m qqd) 3583m",
+    "Q4: What is the shape of the idol of Lord Shiva inside the temple? QQ qqa) Conical shape qqb) circle shape qqc) Cylindrical shape qqd) Rectangular shape",
+    "Q5: What is the pattern of architecture of Kedarnath Temple? QQ qqa) Modern Architecture qqb) Rekha-Sikhara style Architecture qqc) Nagara Architecture qqd) Gothic Architecture"
   ];
   Adata = [
-    "c) Garhwal hills QQ The temple is located in Garhwal hills tracks along the banks of Alaknanda.",
-    "b) 3100m QQ According to the sources, height of the Badrinath temple is 3100m",
-    "d) North-Indian Architecture QQ Badrinath temple follows traditional North-Indian Architecture.",
-    "a) 1m high QQ 1m high black stone idol of God Badrinarayan is present inside the temple.",
-    "c) for 6 months QQ Temple is opened only for 6 months ( end of April till the beginning of November)"
+    "d) Garhwal Himalayan Range QQ Kedarnath Temple is situated in Garhwal Himalayan range.",
+    "a) Mandakini river QQ Mandakini river flows through the Garwhal Himalayan Range.",
+    "d) 3583m QQ Kedarnath temple is about 3583m (11,755 ft) above the sea level.",
+    "a) Conical shape QQ The conical Shiva lingam is worshipped as Lord Shiva inside the Temple",
+    "b) Rekha-Sikhara style Architecture QQ Kedarnath temple follows Rekha- Sikhara style architecture."
   ];
   iterateQuestion(0);
 

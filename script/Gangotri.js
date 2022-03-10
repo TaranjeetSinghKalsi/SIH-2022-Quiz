@@ -4,6 +4,13 @@ const mainQuiz = document.getElementById("main");
 mainQuiz.style.display = 'none';
 const scoreWindow = document.getElementById('score-window');
 scoreWindow.style.display = 'none';
+document.getElementById('check-btn').style.display='none';
+document.getElementById('prev-btn').style.display='none';
+document.getElementById('submit-btn').style.display='none';
+document.getElementById("back-btn").style.display='none';
+var coins=0;
+
+
 var Qdata = [];
 var Adata = [];
 if (sessionStorage.getItem('ispopupshown') === null)
@@ -36,7 +43,7 @@ function showHistorical() {
   document.getElementById("option-container").style.display = 'block';
   document.getElementById("qr-container").style.display = 'none';
   document.getElementById("scan-qr").style.display = 'none';
-  document.getElementById("check-btn").style.display = '';
+//   document.getElementById("check-btn").style.display = '';
 
   // !!! Very Important- question must be in tempalate ex- ':' is necessary just after Qno. . I used QQ and qqa,qqb,qqc,qqd to separate question and options.
 
@@ -67,7 +74,7 @@ function showGeographical() {
   document.getElementById("option-container").style.display = 'block';
   document.getElementById("qr-container").style.display = 'none';
   document.getElementById("scan-qr").style.display = 'none';
-  document.getElementById("check-btn").style.display = '';
+//   document.getElementById("check-btn").style.display = '';
 
 
   // !!! Very Important- question must be in tempalate ex- ':' is necessary just after Qno. . I used QQ and qqa,qqb,qqc,qqd to separate question and options.
@@ -194,8 +201,16 @@ document.getElementById("prev-btn").addEventListener("click", () => {
 });
 document.getElementById("next-btn").addEventListener("click", () => {
 
-  if (indexCounter === (Qdata.length - 1))
+    if(indexCounter === (Qdata.length - 2)){
+        document.getElementById("next-btn").innerText = 'Submit';
+    }
+  if (indexCounter === (Qdata.length - 1)){
+      
+      document.getElementById('submit-btn').click();
+      document.getElementById("next-btn").innerText = 'Next';
+
     return;
+  }
   else {
     resetColors();
     //if quiz is live iterate live quiz
@@ -228,10 +243,26 @@ document.getElementById("check-btn").addEventListener("click", () => {
 
     if (correctValue === selectedValue) {
       //display success popup here
+      Swal.fire(
+        'Good job!',
+        'You Scanned Correct QR!',
+        'success'
+      )
+
+      //coins update
+  coins+= 100;
+  document.getElementById("coins").innerText = coins;
+
       correctanswered.add(qno.innerText);
     }
     else {
       //display error popup here
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You Scanned Wrong QR!',
+        // footer: '<a href="">Why do I have this issue?</a>'
+      })
     }
   }
   else {
@@ -242,6 +273,9 @@ document.getElementById("check-btn").addEventListener("click", () => {
     if (correctValue === selectedValue) {
       document.querySelector("label[for=" + selectedOption.id + "]").style.background = 'green';
       correctanswered.add(qno.innerText);
+      //coins update
+      coins+= 50;
+      document.getElementById("coins").innerText = coins;
     }
     else {
       document.querySelector("label[for=" + selectedOption.id + "]").style.background = 'red';
@@ -301,9 +335,15 @@ document.getElementById("submit-btn").addEventListener("click", () => {
   else
     document.getElementById("incorrect-answers").innerText = (incorrectAnswers.substring(0, incorrectAnswers.lastIndexOf(','))).replaceAll(':', '');
 
+    var coinsEarned;
   //Coins Rendering
-  const coins = 2 * (correctanswered.size);
-  document.getElementById("coins-earned").innerText = coins;
+  if(isLiveQuizActive===true)
+  coinsEarned = 100 * (correctanswered.size);
+  else
+  coinsEarned = 50 * (correctanswered.size);
+
+
+  document.getElementById("coins-earned").innerText = coinsEarned;
 
 });
 
@@ -316,3 +356,5 @@ document.getElementById("finish-review").addEventListener("click", () => {
     document.getElementById("qr-container").style.display = "none";
   }
 });
+
+

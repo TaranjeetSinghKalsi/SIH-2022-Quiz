@@ -7,7 +7,7 @@ const totalCards = 20;
 var popup = document.querySelector('.popup');
 
 const imagesPosition =
-    [0, 1, 0, 2, 3,
+       [0, 1, 0, 2, 3,
         3, 2, 4, 3, 1,
         4, 4, 0, 1, 2,
         4, 1, 2, 3, 0];
