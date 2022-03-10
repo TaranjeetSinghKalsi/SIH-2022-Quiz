@@ -8,6 +8,8 @@
     <title>DevaSthanam Quiz- Gangotri</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script/rawgit-qrCode-qrPacked.js"></script>
+    <script defer src="script/sweetAlert.js"></script>
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <p class="popup-para">You get couple of seconds to memorize the images with their positions. After that, you
                 have to match the same images in pair of 2. For Every correct match you get 100 points and for every
                 wrong match you lose 10 points. The goal is to get the highest points. Enjoy!!!</p>
-            <button type="button" onclick="hidePopup();" class="button popup-btn">Start Game</button>
+            <button id="popup-ok-btn" type="button" onclick="hidePopup();" class="button popup-btn">Start Game</button>
         </div>
     </div>
     <div id="popup-effected-blur-area">
@@ -25,7 +27,7 @@
             <h1>DevaSthanam</h1>
             <div id="coin-container">
                 <img id="coin-img" src="images/coin.svg" alt="">
-                <h3 id="coins">1000</h3>
+                <h3 id="coins">0</h3>
             </div>
         </div>
         <h2 class="text-center" id="place-name">Gangotri Quiz</h2>
@@ -36,8 +38,8 @@
             <div id="geographical-section" onclick="showGeographical()">Geographical</div>
             <div id="live-section" onclick="showLive()">Live</div>
             <a href="puzzle.html">
-                <div id="puzzle-section"> Puzzle</div>
-            </a>
+            <div id="puzzle-section"> Puzzle</div>
+         </a>
         </div>
 
         <!-- Historical and Geographical Section -->
@@ -67,7 +69,9 @@
             </div>
 
             <div id="option-container">
-                <div class="background-reset">
+                <div class="background-reset" onclick="setTimeout(() => {
+                    document.getElementById('check-btn').click();
+                }, 200); ">
                     <input type="radio" id="option-a" name="selectedOption" value="">
                     <label for="option-a">Option 1</label>
                     <details>
@@ -75,7 +79,9 @@
                         <p class="details" id="detail-a">QQ</p>
                     </details>
                 </div>
-                <div class="background-reset">
+                <div class="background-reset" onclick="setTimeout(() => {
+                    document.getElementById('check-btn').click();
+                }, 200); ">
                     <input type="radio" id="option-b" name="selectedOption" value="">
                     <label for="option-b">Option 2</label>
                     <details>
@@ -83,7 +89,9 @@
                         <p class="details" id="detail-b">QQ</p>
                     </details>
                 </div>
-                <div class="background-reset">
+                <div class="background-reset" onclick="setTimeout(() => {
+                    document.getElementById('check-btn').click();
+                }, 200); ">
                     <input type="radio" id="option-c" name="selectedOption" value="">
                     <label for="option-c">Option 3</label>
                     <details>
@@ -91,7 +99,9 @@
                         <p class="details" id="detail-c">QQ</p>
                     </details>
                 </div>
-                <div class="background-reset">
+                <div class="background-reset" onclick="setTimeout(() => {
+                    document.getElementById('check-btn').click();
+                }, 200); ">
                     <input type="radio" id="option-d" name="selectedOption" value="">
                     <label for="option-d">Option 4</label>
                     <details>
@@ -105,6 +115,7 @@
                 <button id="prev-btn" class="btn">Prev</button>
                 <button id="check-btn" class="btn">Submit</button>
                 <button id="scan-qr" class="btn">Scan QR</button>
+                <button id="back-btn" class="btn">Back</button>
                 <button id="next-btn" class="btn">Next</button>
             </div>
             <div class="text-center">
@@ -125,6 +136,7 @@
             </h2>
             <button id="finish-review" class="btn">Finish Review</button>
         </section>
+
     </div>
 </body>
 <script src="script/Gangotri.js"></script>
