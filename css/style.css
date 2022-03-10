@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -22,28 +22,27 @@ a{
 .button:hover {
   color: aliceblue;
   background-color: rgba(255, 148, 0, 0.7);
-
 }
 
 .popup {
   width: 50%;
   border: 2px solid beige;
-  background-color: #CFF4FC;
+  background-color: #cff4fc;
   margin: 10% auto;
   padding: 2rem;
   text-align: center;
   display: none;
   border-radius: 1rem;
 }
-.popup-para{
+.popup-para {
   margin: 1.75em;
   font-size: 1.25rem;
 }
-.popup-container{
+.popup-container {
   z-index: 99999;
-position: absolute;
-width: 100%;
-height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .blur-filter {
   -webkit-filter: blur(2px);
@@ -61,8 +60,8 @@ height: 100%;
   position: relative;
   padding: 1em 1.5em;
 }
-#place-name{
- margin-top: 1em;
+#place-name {
+  margin-top: 1em;
 }
 #coin-container {
   display: flex;
@@ -85,10 +84,10 @@ height: 100%;
   text-align: left;
   padding: 0 1.5em;
 }
-#quiz-sections{
+#quiz-sections {
   margin-top: 3em;
 }
-#quiz-sections div{
+#quiz-sections div {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -134,7 +133,7 @@ left: 0.5em; */
   align-items: center;
   justify-content: left;
   margin: 0.5em 1.5em;
-  
+
   background-color: #eee;
   /* padding: 2em 0; */
 }
@@ -152,7 +151,6 @@ left: 0.5em; */
 #option-container input:checked + label {
   background-color: rgb(255, 188, 62);
 }
-
 
 #btn-container {
   position: relative;
@@ -192,31 +190,28 @@ left: 0.5em; */
   /* transform: scale(1.05); */
 }
 
-
-#score-window{
+#score-window {
   position: relative;
   top: 1em;
   width: 100%;
   display: none;
 }
 
-#see-details{
+#see-details {
   z-index: -99;
   position: absolute;
   top: 0;
   left: 0;
-
 }
-details{
+details {
   display: none;
   width: 100%;
   background-color: azure;
   text-align: justify;
 }
-.details{
+.details {
   padding: 1em;
 }
-
 
 /* live quiz section */
 #qr-canvas {
@@ -235,19 +230,19 @@ details{
   margin: 15px;
   background: white;
 }
-#qr-container{
+#qr-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#img-container{
+#img-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#q-img{
+#q-img {
   width: 80%;
   margin: 0 auto;
 }
@@ -255,15 +250,16 @@ details{
   margin-top: 1em;
 } */
 
+
 @media only screen and (max-width: 600px) {
-  .popup{
+  .popup {
     width: 85%;
     padding: 3em 1em;
-    
   }
-  .popup-para{
+  .popup-para {
     margin: 2em 0;
     text-align: justify;
     padding: 0 0.5em;
   }
+
 }
