@@ -10,10 +10,13 @@ This is a Quiz part made by me for [SIH-2022(Smart India Hackathon 2022)](https:
 You can scan any given below QR code using this website to play Quiz. Click on QR for full screen view.
 - Badrinath Gateway:
 <img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Badrinath%20Gateway.png" alt="drawing" width="200"/>
+
 - Gangotri Gateway:
 <img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Gangotri%20Gateway.png" alt="drawing" width="200"/>
+
 - Yamunotri Gateway:
 <img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Yamunotri%20%20Gateway.png" alt="drawing" width="200"/>
+
 - Kedarnath Gateway:
 <img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Kedarnath%20Gateway.png" alt="drawing" width="200"/>
 
@@ -25,5 +28,5 @@ Correct Answers of Live Quiz Section are as follows:
 2. Answer of Q2:
 <img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Q2%20Answer.jpeg" alt="Q2" width="200"/>
 3. Answer of Q3:
-<img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Q3%20Answer.jpeg)" alt="Q3" width="200"/>
+<img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Q3%20Answer.jpeg" alt="Q3" width="200"/>
 
