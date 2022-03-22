@@ -9,7 +9,7 @@ This is a Quiz part made by me for [SIH-2022(Smart India Hackathon 2022)](https:
 ## How to Play
 You can scan any given below QR code using this website to play Quiz.
 - Badrinath Gateway:
-- <img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Badrinath%20Gateway.png" alt="drawing" width="200"/>
+<img src="https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Badrinath%20Gateway.png" alt="drawing" width="200"/>
 - Badrinath Gateway![Badrinath](https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Badrinath%20Gateway.png)
 - Gangotri Gateway![Badrinath](https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Gangotri%20Gateway.png)
 - Yamunotri Gateway![Badrinath](https://raw.githubusercontent.com/TaranjeetSinghKalsi/SIH-2022-Quiz/main/QR/Yamunotri%20%20Gateway.png)
