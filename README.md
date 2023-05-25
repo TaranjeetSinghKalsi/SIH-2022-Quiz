@@ -8,7 +8,8 @@ This is a Quiz part made by me for [SIH-2022(Smart India Hackathon 2022)](https:
 
 ## How to Play
 You can scan any given below QR code using this website to play Quiz. Click on QR for full screen view.
-Note - Use VPN if images are not visible. There might be DNS problem with your network operator.
+
+#### Note - Use VPN if images are not visible. There might be DNS problem with your network operator.
 
 - Badrinath Gateway:
 <img src="QR/Badrinath Gateway.png" alt="drawing" width="200"/>
