@@ -1,5 +1,7 @@
 # SIH-2022-Quiz
-This is a Quiz part made by me for [SIH-2022(Smart India Hackathon 2022)](https://www.sih.gov.in/).
+ Developed a QR-based Web Game during SIH 2022 to boost Tourism.
+Players scan a QR code to start the game, answering MCQs and scanning QR codes at on-site to earn redeemable points for goodies. This is a Quiz part made by me for [SIH-2022(Smart India Hackathon 2022)](https://www.sih.gov.in/).
+
 ## Technology Used:
 1. HTML
 2. CSS
@@ -7,7 +9,7 @@ This is a Quiz part made by me for [SIH-2022(Smart India Hackathon 2022)](https:
 
 
 ## How to Play
-You can scan any given below QR code using this website to play Quiz. Click on QR for full screen view.
+You can scan any given below QR code using the website to play Quiz. Click on QR for full screen view.
 
 #### Note - Use VPN if images are not visible. There might be DNS problem with your network operator.
 
